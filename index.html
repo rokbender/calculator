@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Тестове завдання</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+  <h1>Калькулятор</h1>
+   <div class="main">
+       <div class="form">
+           <form action="">
+               <div class="sliders">
+                   <div class="slide">
+                      <div class="slide_text">
+                           <label for="storage">
+                                <span>Storage:</span>
+                                <input type="number" id="numbRange" min="0" max="1000">
+                                <span>GB</span>
+                           </label>
+                       </div>
+                       <input type="range" id="storage" name="storage" min="0" max="1000" value="100" step="1">
+                   </div>
+                   <div class="slide">
+                      <div class="slide_text">
+                           <label for="transfer">
+                                <span>Transfer:</span>
+                                <input type="number" id="numbTrans" min="0" max="1000">
+                                <span>GB</span>
+                           </label>
+                       </div>
+                       <input type="range" id="transfer" name="transfer" min="0" max="1000" value="400" step="1" >
+                   </div>
+               </div>
+           </form>
+       </div>
+       <div class="wrapperchart">
+          <form action="" id="form1">
+               <div class="box_chart left">
+                       <div class="inner">
+                          <div class="text"><span><a href="https://www.backblaze.com/">Backblaze</a></span></div>
+                          <div class="img">
+                              <img src="img/backblaze-icon-512x512-4wg04jc3.png" alt="">
+                          </div>
+                       </div>
+                       <div class="inner">
+                          <div class="text">
+                              <span><a href="https://bunny.com.ua/ua/">Bunny</a></span>
+                              <div class="choice">
+                              <input type="radio" id="HDD" name="typeMemory" value="HDD" checked>
+                              <label for="HDD">HDD</label>
+                              <input type="radio" id="SDD" name="typeMemory" value="SDD">
+                              <label for="SDD">SDD</label>
+                          </div>
+                          </div>
+                          <div class="img">
+                              <img src="img/4905239.png" alt="">
+                          </div>
+                          
+                       </div>
+                       <div class="inner">
+                          <div class="text">
+                          <span><a href="https://www.scaleway.com/en/">Scaleway</a></span>
+                          <div class="choice">
+                              <input type="radio" id="choice1" name="choice" value="Multi" checked>
+                              <label for="choice1">Multi</label>
+                              <input type="radio" id="choice2" name="choice" value="Single" >
+                              <label for="choice2">Single</label>
+                          </div>
+                          </div>
+                          <div class="img">
+                              <img src="img/scaleway.png" alt="">
+                          </div>
+                       </div>
+                       <div class="inner">
+                          <div class="text">
+                          <span><a href="https://www.vultr.com/">Vultr</a></span>
+                          
+                          </div>
+                          <div class="img">
+                              <img src="img/vultr-icon-512x512-f9c25b8o.png" alt="">
+                          </div>
+                       </div>
+               </div>
+              
+           </form>
+           <div class="box_chart right">
+                  <div class="chart">
+                      <div id="leftthings">
+                          
+                      </div>
+                      <div class="blockwrap">
+                          <div class="fig">
+                              <div class="block" id="backblaze"></div>
+                              <span id="priceBackblaze">20</span>
+                              
+                          </div>
+                          <div class="fig" >
+                              <div class="block" id="bunny"></div>
+                              <span id="priceBunny">20</span>
+                              
+                          </div>
+                          <div class="fig">
+                              <div class="block" id="scaleway"></div>
+                              <span id="priceScaleway">20</span>
+                              
+                          </div>
+                          <div class="fig">
+                              <div class="block" id="vultr"></div>
+                              <span id="priceVultr">20</span>
+                              
+                          </div>
+                      </div>
+                  </div>
+                  
+              </div>  
+       </div>
+   </div>
+   
+ <script src="javascript.js"></script>  
+
+</body>
+</html>
